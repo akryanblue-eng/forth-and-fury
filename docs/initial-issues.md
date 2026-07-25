@@ -15,6 +15,8 @@ Ordering is roughly dependency-first: do the ⚙️ Foundation issues before the
 
 Evaluate Godot 4 (C#), Unity, and a custom Rust/bevy option against our needs: fast physics, deterministic simulation for future rollback netcode, cross-platform reach, and a content pipeline. Produce a short decision doc in `docs/` with the pick and the reasoning.
 
+**Progress:** decision drafted in [`docs/decisions/0001-prototype-engine-and-language.md`](decisions/0001-prototype-engine-and-language.md) — *Proposed: Godot 4 + C#*. Ratify it and stand up a "hello world" scene to close this out.
+
 **Done when:** an engine is chosen and recorded, and a "hello world" scene runs.
 
 ---
