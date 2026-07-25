@@ -1,0 +1,28 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Build / engine artifacts (populate once an engine is chosen — see docs/roadmap.md)
+# Godot
+.godot/
+export_presets.cfg
+*.import
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+*.csproj
+*.sln
+# Rust
+/target/
+
+# Logs / local env
+*.log
+.env
+.env.local
