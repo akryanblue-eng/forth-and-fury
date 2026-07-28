@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    name: Build & validate (Godot 4 C#)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore
+        run: dotnet restore FourthAndFury.csproj
+
+      - name: Build
+        run: dotnet build FourthAndFury.csproj -c Debug --no-restore
+
+      - name: Validate Godot project structure
+        run: |
+          set -e
+          test -f project.godot
+          grep -q 'run/main_scene="res://scenes/AttractScreen.tscn"' project.godot
+          test -f scenes/AttractScreen.tscn
+          grep -q 'res://scripts/AttractScreen.cs' scenes/AttractScreen.tscn
+          test -f scripts/AttractScreen.cs
+          test -f scripts/Football.cs
+          echo "Godot 4 C# project structure OK"
