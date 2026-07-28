@@ -1,0 +1,23 @@
+; Engine configuration file — Fourth & Fury (QSAL-001)
+; Godot 4 C# project. F2 skeleton + hello-world attract scene.
+; Full docs: https://docs.godotengine.org/en/stable/tutorials/editor/project_settings.html
+
+config_version=5
+
+[application]
+
+config/name="Fourth & Fury"
+config/description="QSAL-001 — arcade football prototype. F2 project skeleton and hello-world attract screen. No gameplay systems yet."
+run/main_scene="res://scenes/AttractScreen.tscn"
+config/features=PackedStringArray("4.3", "C#", "Forward Plus")
+
+[dotnet]
+
+project/assembly_name="FourthAndFury"
+
+[display]
+
+window/size/viewport_width=960
+window/size/viewport_height=540
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"

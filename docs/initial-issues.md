@@ -15,9 +15,9 @@ Ordering is roughly dependency-first: do the ⚙️ Foundation issues before the
 
 Evaluate Godot 4 (C#), Unity, and a custom Rust/bevy option against our needs: fast physics, deterministic simulation for future rollback netcode, cross-platform reach, and a content pipeline. Produce a short decision doc in `docs/` with the pick and the reasoning.
 
-**Progress:** decision drafted in [`docs/decisions/0001-prototype-engine-and-language.md`](decisions/0001-prototype-engine-and-language.md) — *Proposed: Godot 4 + C#*. Ratify it and stand up a "hello world" scene to close this out.
+**Progress:** engine **ratified — Godot 4 + C#** (see [`docs/decisions/0001-prototype-engine-and-language.md`](decisions/0001-prototype-engine-and-language.md), *Accepted*). The F2 project skeleton adds the hello-world attract scene (`scenes/AttractScreen.tscn`), which is the "hello world" proof; open it in Godot 4 to view, or let CI build the C# project on every push.
 
-**Done when:** an engine is chosen and recorded, and a "hello world" scene runs.
+**Done when:** ~~an engine is chosen and recorded~~ ✅, and a "hello world" scene runs — landing with F2.
 
 ---
 

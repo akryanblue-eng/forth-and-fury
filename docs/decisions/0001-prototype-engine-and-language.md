@@ -1,11 +1,11 @@
 # ADR 0001 — Prototype Engine & Language
 
-- **Status:** Proposed (awaiting ratification)
+- **Status:** Accepted
 - **Work item:** F1 — Decide the engine and language
 - **Phase:** 0 (Foundation)
 - **Date:** 2026-07-25
 
-> This is a decision *record*, not a final commitment. It proposes a pick and the reasoning so the choice is made deliberately and can be revisited against explicit criteria. The `Done when` for F1 also requires a running "hello world" scene — that lands in a follow-up once this is ratified.
+> This decision record captures a **ratified** choice and the reasoning behind it, so the pick is deliberate and can be revisited against the explicit criteria below. F1's `Done when` also requires a running "hello world" scene; that proof ships with the F2 project skeleton (the attract screen).
 
 ## Context
 
@@ -33,7 +33,7 @@ The requirements that actually matter, ranked:
 - **Pros:** Full control over a deterministic fixed-step simulation — the cleanest long-term path to rollback netcode.
 - **Cons:** Highest cost, slowest to first playable, and it front-loads engineering before we've proven the game is fun. Wrong altitude for Phase 1.
 
-## Decision (Proposed)
+## Decision
 
 **Use Godot 4 with C# for the Phase 1 prototype.**
 

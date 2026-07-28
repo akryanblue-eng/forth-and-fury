@@ -5,22 +5,15 @@ Thumbs.db
 .idea/
 .vscode/
 
-# Build / engine artifacts (populate once an engine is chosen — see docs/roadmap.md)
-# Godot
+# Godot 4 editor cache (regenerated on open)
 .godot/
+
+# .NET / C# build output
+bin/
+obj/
+
+# Godot export artifacts
 export_presets.cfg
-*.import
-# Unity
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-*.csproj
-*.sln
-# Rust
-/target/
 
 # Logs / local env
 *.log
